@@ -1,3 +1,7 @@
+# License #
+
+This project is licensed under the MIT license. See [LICENSE](https://github.com/jbji/ZaoMeng_JourneyToTheWest_3_4399_Flash_Utility/blob/master/LICENSE)
+
 ## ZaoMengSavesAnalyser 造3游戏存档转换器
 * 功能：将特定游戏存档转换为xml文档，或者进行相反操作。
 * 特点：
