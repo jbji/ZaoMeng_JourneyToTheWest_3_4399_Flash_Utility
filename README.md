@@ -1,5 +1,5 @@
 
-## ZaoMengSavesAnalyser 造3游戏存档转换器
+## ZaoMengSavesAnalyser 造3游戏存档转换器（*测试版）
 * 功能：将特定游戏存档转换为xml文档，或者进行相反操作。
 * 使用方法：
 	* 1.打开Windows PowerShell 或 Command Prompt 
