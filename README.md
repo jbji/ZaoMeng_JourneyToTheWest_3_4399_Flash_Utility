@@ -25,3 +25,12 @@ This project is licensed under the MIT license. See [LICENSE](https://github.com
 	被拖拽的swf文件将被破解/加密
 	
 > 注：小工具开发版本基于uid100857231的哔哩哔哩用户二次开发的单机版Flash游戏。
+>
+> ```
+> 推荐自行编译运行, 程序参数:
+> For 3,ZaiXu...,      MY_PIVOT = 200,   MY_END = 275.   
+> For 2,YongChuang..., MY_PIVOT = 96,    MY_END = 165.  
+> ```
+>
+> build文件夹提供的是基于参数(200,275)的编译结果
+

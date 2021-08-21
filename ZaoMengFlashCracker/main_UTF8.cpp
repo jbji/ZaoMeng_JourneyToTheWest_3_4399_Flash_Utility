@@ -5,7 +5,7 @@
 #define DEFAULT_LEN 16777216
 
 
-//EDIT HERE ÔÚÕâÀï±à¼­
+//EDIT HERE åœ¨è¿™é‡Œç¼–è¾‘
 
 #define MY_PIVOT 200
 #define MY_END 275
@@ -44,7 +44,7 @@ struct ByteData{
         switchHeader(MY_PIVOT);
     }
 private:
-    //·ÖÅäÄÚ´æ
+    //åˆ†é…å†…å­˜
     void allocateMemory(int len = DEFAULT_LEN){
         if(max_len >= len) return;
         if(max_len <= 0){
@@ -78,15 +78,15 @@ void processFile(char * file_name,int mode);
 int main(int argc, char *argv[]) {
     if(argc == 1){
         cout << "Wrong Usage! Example: main.exe swf_file_name[s]" << endl;
-        cout << "ÕýÈ·Ê¹ÓÃ·½·¨£º\n1.´ò¿ªWindows PowerShell »ò Command Prompt \n"
-                "2.ÍÏ×§ZaoMengFlashCracker.exeÖÁPowerShell»òCommand Prompt´°¿Ú\n"
-                "3.ÖØ¸´¸Ã²½ÖèÓÐÏÞ´Î£ºÊäÈëÒ»¸ö¿Õ¸ñÔÙÍÏ×§Ò»¸öÐèÒª´¦ÀíµÄswfÎÄ¼þ½øpowershell´°¿Ú\n"
-                "±»ÍÏ×§µÄswfÎÄ¼þ½«±»ÆÆ½â/¼ÓÃÜ\n";
+        cout << "æ­£ç¡®ä½¿ç”¨æ–¹æ³•ï¼š\n1.æ‰“å¼€Windows PowerShell æˆ– Command Prompt \n"
+                "2.æ‹–æ‹½ZaoMengFlashCracker.exeè‡³PowerShellæˆ–Command Promptçª—å£\n"
+                "3.é‡å¤è¯¥æ­¥éª¤æœ‰é™æ¬¡ï¼šè¾“å…¥ä¸€ä¸ªç©ºæ ¼å†æ‹–æ‹½ä¸€ä¸ªéœ€è¦å¤„ç†çš„swfæ–‡ä»¶è¿›powershellçª—å£\n"
+                "è¢«æ‹–æ‹½çš„swfæ–‡ä»¶å°†è¢«ç ´è§£/åŠ å¯†\n";
         system("pause");
         return 1;
     }else{
-        cout << "Ñ¡ÔñÄ£Ê½: Select Mode:" << endl
-            << "0 - ½âÃÜÄ£Ê½ Decode" << endl << "1 - ¼ÓÃÜÄ£Ê½ Encode" << endl << "ÊäÈëÊý×Ö´úºÅÒÔÑ¡Ôñ: ";
+        cout << "é€‰æ‹©æ¨¡å¼: Select Mode:" << endl
+            << "0 - è§£å¯†æ¨¡å¼ Decode" << endl << "1 - åŠ å¯†æ¨¡å¼ Encode" << endl << "è¾“å…¥æ•°å­—ä»£å·ä»¥é€‰æ‹©: ";
         int mode = 0;
         cin >> mode;
         for(int i = 1 ; i < argc ; i++){
@@ -99,9 +99,9 @@ int main(int argc, char *argv[]) {
 }
 
 void processFile(char * file_name, int mode){
-    //´æ´¢
+    //å­˜å‚¨
     ByteData fdata;
-    //´ò¿ªÎÄ¼þ
+    //æ‰“å¼€æ–‡ä»¶
     ifstream fin(file_name,ios::in | ios::binary);
     for(char tmp; fin.read( (char *) &tmp, sizeof(char));){
         fdata.write(tmp);
